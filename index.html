@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clustered Bubble Chart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Custom Script -->
+    <script src="bubble-chart.js" defer></script>
+    <style>
+        svg {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+
+        #tooltip {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            pointer-events: none; /* Prevent tooltip from blocking mouse events */
+            transition: opacity 0.2s ease;
+        }
+
+        .cluster-label {
+            font-size: 20px;
+            font-weight: bold;
+            fill: #333;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="h3">Clustered Bubble Chart</h1>
+                <p>Visualize project data with dynamic clustering and tooltips.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <label for="group-by" class="form-label">Group by:</label>
+                <select id="group-by" class="form-select w-auto d-inline-block" onchange="updateClustering()">
+                    <option value="type_cat">Type Category</option>
+                    <option value="cost_cat">Cost Category</option>
+                    <option value="duration_cat">Duration Category</option>
+                    <option value="year_cat">Year Category</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <svg width="1800" height="1800"></svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip" style="opacity: 0;"></div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

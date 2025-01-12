@@ -1,0 +1,178 @@
+[
+    {
+        "name":"Project A",
+        "type_cat":"environment",
+        "cost":1000000,
+        "duration":12,
+        "effort_days":120,
+        "start_year":2019,
+        "cost_cat":"500k-1M",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"2019-2021"
+    },
+    {
+        "name":"Project B",
+        "type_cat":"social",
+        "cost":750000,
+        "duration":8,
+        "effort_days":90,
+        "start_year":2022,
+        "cost_cat":"500k-1M",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"2022-2024"
+    },
+    {
+        "name":"Project C",
+        "type_cat":"government",
+        "cost":500000,
+        "duration":6,
+        "effort_days":70,
+        "start_year":2028,
+        "cost_cat":"kl_500k",
+        "duration_cat":"kl_6Mt",
+        "year_cat":"gr_2022-2024"
+    },
+    {
+        "name":"Project D",
+        "type_cat":"economics",
+        "cost":200000,
+        "duration":18,
+        "effort_days":200,
+        "start_year":2023,
+        "cost_cat":"kl_500k",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"2022-2024"
+    },
+    {
+        "name":"Project E",
+        "type_cat":"environment",
+        "cost":1205000,
+        "duration":24,
+        "effort_days":150,
+        "start_year":2024,
+        "cost_cat":"1M-5M",
+        "duration_cat":".5J-3J",
+        "year_cat":"2022-2024"
+    },
+    {
+        "name":"Project F",
+        "type_cat":"social",
+        "cost":1250000,
+        "duration":15,
+        "effort_days":150,
+        "start_year":2020,
+        "cost_cat":"1M-5M",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"2019-2021"
+    },
+    {
+        "name":"Project G",
+        "type_cat":"environment",
+        "cost":125000,
+        "duration":8,
+        "effort_days":150,
+        "start_year":2021,
+        "cost_cat":"kl_500k",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"2019-2021"
+    },
+    {
+        "name":"Project H",
+        "type_cat":"economics",
+        "cost":1250000,
+        "duration":12,
+        "effort_days":150,
+        "start_year":2022,
+        "cost_cat":"1M-5M",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"2022-2024"
+    },
+    {
+        "name":"Project I",
+        "type_cat":"government",
+        "cost":150000,
+        "duration":36,
+        "effort_days":150,
+        "start_year":2021,
+        "cost_cat":"kl_500k",
+        "duration_cat":".5J-3J",
+        "year_cat":"2019-2021"
+    },
+    {
+        "name":"Project J",
+        "type_cat":"social",
+        "cost":2500000,
+        "duration":30,
+        "effort_days":150,
+        "start_year":2024,
+        "cost_cat":"1M-5M",
+        "duration_cat":".5J-3J",
+        "year_cat":"2022-2024"
+    },
+    {
+        "name":"Project K",
+        "type_cat":"environment",
+        "cost":800000,
+        "duration":6,
+        "effort_days":150,
+        "start_year":2022,
+        "cost_cat":"500k-1M",
+        "duration_cat":"kl_6Mt",
+        "year_cat":"2022-2024"
+    },
+    {
+        "name":"Project L",
+        "type_cat":"economics",
+        "cost":950000,
+        "duration":8,
+        "effort_days":150,
+        "start_year":2021,
+        "cost_cat":"500k-1M",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"2019-2021"
+    },
+    {
+        "name":"Project M",
+        "type_cat":"government",
+        "cost":126067,
+        "duration":10,
+        "effort_days":150,
+        "start_year":2019,
+        "cost_cat":"kl_500k",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"2019-2021"
+    },
+    {
+        "name":"Project N",
+        "type_cat":"social",
+        "cost":1200000,
+        "duration":120,
+        "effort_days":150,
+        "start_year":2018,
+        "cost_cat":"1M-5M",
+        "duration_cat":"gr_3J",
+        "year_cat":"kl_2019"
+    },
+    {
+        "name":"Project O",
+        "type_cat":"government",
+        "cost":1250000,
+        "duration":6,
+        "effort_days":150,
+        "start_year":2017,
+        "cost_cat":"1M-5M",
+        "duration_cat":"kl_6Mt",
+        "year_cat":"kl_2019"
+    },
+    {
+        "name":"Project P",
+        "type_cat":"social",
+        "cost":1250000,
+        "duration":12,
+        "effort_days":150,
+        "start_year":2018,
+        "cost_cat":"1M-5M",
+        "duration_cat":"6Mt-1.5J",
+        "year_cat":"kl_2019"
+    }
+]
