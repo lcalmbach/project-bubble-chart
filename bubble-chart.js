@@ -1,6 +1,6 @@
 const width = 1800;
 const height = 800;
-const collision_radius = 20;
+const collision_radius = 15;
 const tooltip = d3.select("#tooltip"); // Select the tooltip div
 const label_font_size = "16px"
 
@@ -29,7 +29,7 @@ const categoryPositions = {
         "kl_2019": width * 0.2,
         "2019-2021": width * 0.4,
         "2022-2024": width * 0.6,
-        "gr_2022-2024": width * 0.8
+        "gr_2024": width * 0.8
     }
 };
 
@@ -42,6 +42,8 @@ d3.json("projects.json").then(data => {
 
     // Create a simulation
     const simulation = d3.forceSimulation(data)
+        .alphaDecay(0.001) // Slower decay
+        .velocityDecay(0.5) // Slow down node velocity
         .force("x", d3.forceX(width / 2).strength(0.05))
         .force("y", d3.forceY(height / 2).strength(0.05))
         .force("collision", d3.forceCollide(d => Math.sqrt(d.cost) / collision_radius + 2))
@@ -80,8 +82,8 @@ d3.json("projects.json").then(data => {
                 <strong>Project:</strong> ${d.name}<br>
                 <strong>Start Year:</strong> ${d.start_year}<br>
                 <strong>Cost:</strong> $${d.cost.toLocaleString()}<br>
-                <strong>Duration:</strong> ${d.time} months<br>
-                <strong>Category:</strong> ${d.category}
+                <strong>Duration:</strong> ${d.duration} months<br>
+                <strong>Category:</strong> ${d.type_cat}
             `);
     })
     .on("mousemove", function (event) {
